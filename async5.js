@@ -7,11 +7,11 @@ function createPromise() {
 }
 
 function squareNumber(number) {
-  return new Promise((response) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       number *= number;
       console.log(`Квадрат числа: ${number}`);
-      response(number);
+      resolve(number);
     }, 3000);
   });
 }
